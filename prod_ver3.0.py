@@ -29,7 +29,6 @@ client = gspread.authorize(credential)
 
 
 app = DashProxy(prevent_initial_callbacks=True,transforms=[MultiplexerTransform()])
-server = app.server
 auth = dash_auth.BasicAuth(app,{'test':'test'})
 
 
